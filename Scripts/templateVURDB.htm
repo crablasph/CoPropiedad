@@ -29,11 +29,14 @@
 		<link type="text/css" rel="stylesheet" href="https://www.vur.gov.co/portal/org.richfaces.resources/javax.faces.resource/org.richfaces.staticResource/4.3.7.Final/PackedCompressed/blueSky/packed/packed.css">
 		
 		
-		</head><body><span id="loadingStatus"><span style="display:none" class="rf-st-start"></span><span class="rf-st-stop"></span><script type="text/javascript">new RichFaces.ui.Status("loadingStatus",{"onstop":function(event){RichFaces.$('loadingPanel').hide()},"onstart":function(event){RichFaces.$('loadingPanel').show()},"statusName":"loadingStatus"} )</script></span><div id="loadingPanel" style="visibility: hidden;"><div class="rf-pp-shade" id="loadingPanel_shade" style="z-index:100;"><button class="rf-pp-btn" id="loadingPanelFirstHref" name="loadingPanelfirstHref"></button></div><div class="rf-pp-cntr " id="loadingPanel_container" style="position: fixed; z-index:100; "><div class="rf-pp-shdw" id="loadingPanel_shadow" style="opacity: 0.1;"></div><div class="rf-pp-cnt-scrlr" id="loadingPanel_content_scroller"><div class="rf-pp-cnt" id="loadingPanel_content">
+		</head><body><span id="loadingStatus"><span style="display:none" class="rf-st-start"></span><span class="rf-st-stop"></span>
+		
+		</span><div id="loadingPanel" style="visibility: hidden;"><div class="rf-pp-shade" id="loadingPanel_shade" style="z-index:100;"><button class="rf-pp-btn" id="loadingPanelFirstHref" name="loadingPanelfirstHref"></button></div><div class="rf-pp-cntr " id="loadingPanel_container" style="position: fixed; z-index:100; "><div class="rf-pp-shdw" id="loadingPanel_shadow" style="opacity: 0.1;"></div><div class="rf-pp-cnt-scrlr" id="loadingPanel_content_scroller"><div class="rf-pp-cnt" id="loadingPanel_content">
 		<div style="padding-top: 10px; padding-bottom: 10px; text-align: center; font-size: 12px; font-weight: bold;">Procesando informaci&oacute;n...
 		</div>
 		<div style="padding-bottom: 10px; text-align: center;"><img src="/portal/resources/images/loading.gif">
-		</div></div></div></div><script type="text/javascript">new RichFaces.ui.PopupPanel("loadingPanel",{"height":90,"width":300} );</script></div>
+		</div></div></div></div>
+		</div>
         <div id="container">
     <div id="header">
         <div class="row" style="margin-left: 15px; margin-right: 15px;">
@@ -55,7 +58,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav" id="menu-navegacion"><li>
 <a target="_blank" href="/portal/pages/vur/inicio.jsf">Noticias</a></li><li>
-<a href="#" onclick="popupVur('https://accesos.supernotariado.gov.co/iam/im/snr/ui7/index.jsp'); return false;">Gestion de Usuario</a></li><li class="dropdown">
+<a href="#" >Gestion de Usuario</a></li><li class="dropdown">
 <a href="%23" class="dropdown-toggle" data-toggle="dropdown">Consultas<b class="caret"></b></a><ul class="dropdown-menu">
 <li class="dropdown-submenu"><a target="_blank" href="#">Consultas Jur&iacute;dicas</a><ul class="dropdown-menu"><li><a href="/portal/pages/vur/inicio.jsf?url=%2Fportal%2FPantallasVUR%2F%23%2F%3Ftipo%3DdatosBasicosTierras">Datos b&aacute;sicos del inmueble</a></li><li><a href="/portal/pages/vur/inicio.jsf?url=%2Fportal%2FPantallasVUR%2F%23%2F%3Ftipo%3DestadoJuridicoTierras">Estado jur&iacute;dico del Inmueble</a></li></ul></li></ul></li><li>
 <a href="/portal/pages/vur/inicio.jsf?url=%2Fportal%2FPantallasVUR%2F%23%2FestadoTramite">Estado del Tr&aacute;mite</a></li><li>
@@ -88,7 +91,7 @@
     
 
     <div class="panel panel-primary datos-basicos" ng-show="pantallaDatosBasicos">
-        <div class="panel-heading">Datos B&aacute;sicos - Certificado de Tradici&oacute;n y Libertad</div>
+        <div class="panel-heading" style="color:white;">Datos B&aacute;sicos - Certificado de Tradici&oacute;n y Libertad</div>
         <div class="panel-body">
             <div class="row">
                 <div class="col-md-4 col-lg-4 ng-binding">
@@ -106,7 +109,7 @@
                     <span class="span-titulo">N&deg; Matr&iacute;cula Inmobiliar&iacute;a: </span>008-150
                 </div>
                 <div class="col-md-8 col-lg-8 ng-binding">
-                    <span class="span-titulo">Referencia Catastral: </span>
+                    <span class="span-titulo">Referencia Catastral: </span>123456
                 </div>
             </div>
             <div class="row">
@@ -114,7 +117,7 @@
                     <span class="span-titulo">Departamento: </span>ANTIOQUIA
                 </div>
                 <div class="col-md-8 col-lg-8 ng-binding">
-                    <span class="span-titulo">Referencia Catastral Anterior: </span>
+                    <span class="span-titulo">Referencia Catastral Anterior: </span>789321
                 </div>
             </div>
             <div class="row">
@@ -122,7 +125,7 @@
                     <span class="span-titulo">Municipio: </span>CHIGORODO
                 </div>
                 <div class="col-md-8 col-lg-8 ng-binding">
-                    <span class="span-titulo">C&eacute;dula Catastral: </span>
+                    <span class="span-titulo">C&eacute;dula Catastral: </span>147852
                 </div>
             </div>
             <div class="row">
@@ -143,7 +146,7 @@
             </div>
             <div class="row single-child">
                 <div class="col-lg-12 col-md-12">
-                    <span class="span-titulo">Direcciones Anteriores: </span>
+                    <span class="span-titulo">Direcciones Anteriores: </span>CALLE FALSA 123
                     <ul>
                         <!-- ngRepeat: dir in datosDetalle.direccionesAnteriores -->
                     </ul>
@@ -207,13 +210,13 @@
                     <thead>
                         <tr>		
                             <td>ORIGEN</td>
-                            <td>DESCRIPCI&oacute;N</td>
+                            <td>DESCRIPCI&Oacute;N</td>
                             <td>FECHA</td>
                             <td>DOCUMENTO</td>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- ngRepeat: registro in datosDetalle.documentos -->
+                        
                     </tbody>
                 </table>
             </div>
@@ -223,27 +226,27 @@
                 <table class="table-condensed table table-striped table-bordered">
                     <thead>
                         <tr>		
-                            <td>N&uacute;MERO DOCUMENTO</td>
+                            <td>N&Uacute;MERO DOCUMENTO</td>
                             <td>TIPO IDENTIFICACI&oacute;N</td>
-                            <td>NOMBRES-APELLIDOS (RAZ&oacute;N SOCIAL)</td>
-                            <td>PARTICIPACI&oacute;N</td>
+                            <td>NOMBRES-APELLIDOS (RAZ&Oacute;N SOCIAL)</td>
+                            <td>PARTICIPACI&Oacute;N</td>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- ngRepeat: registro in datosDetalle.propietarios|itemsPerPage:10 : 'datosPropietarios' --><tr pagination-id="datosPropietarios" ng-repeat="registro in datosDetalle.propietarios|itemsPerPage:10 : 'datosPropietarios'" class="ng-scope">
+                        <tr  class="ng-scope">
                             <td class="ng-binding">10936542</td>
                             <td class="ng-binding">C&eacute;DULA CIUDADAN&iacute;A</td>
                             <td class="ng-binding">HELIO MANUEL DIAZ NEGRETE </td>
                             <td class="ng-binding"></td>
-                        </tr><!-- end ngRepeat: registro in datosDetalle.propietarios|itemsPerPage:10 : 'datosPropietarios' --><tr pagination-id="datosPropietarios" ng-repeat="registro in datosDetalle.propietarios|itemsPerPage:10 : 'datosPropietarios'" class="ng-scope">
+                        </tr><tr pagination-id="datosPropietarios"  class="ng-scope">
                             <td class="ng-binding">26135855</td>
                             <td class="ng-binding">C&eacute;DULA CIUDADAN&iacute;A</td>
                             <td class="ng-binding">IDALIDES CASTELLAR RACINE </td>
                             <td class="ng-binding"></td>
-                        </tr><!-- end ngRepeat: registro in datosDetalle.propietarios|itemsPerPage:10 : 'datosPropietarios' -->
+                        </tr>
                     </tbody>
                 </table>
-                <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true" pagination-id="datosPropietarios" class="ng-isolate-scope"><!-- ngIf: 1 < pages.length || !autoHide --></dir-pagination-controls>
+                <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true" pagination-id="datosPropietarios" class="ng-isolate-scope"></dir-pagination-controls>
             </div>
 
             <div class="row single-child">
@@ -277,7 +280,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- ngRepeat: registro in datosDetalle.salvedades -->
+                        
                     </tbody>
                 </table>
             </div>
@@ -295,7 +298,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- ngRepeat: registro in datosDetalle.tramites -->
+                        
+						
                     </tbody>
                 </table>
             </div>
@@ -329,10 +333,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- ngRepeat: registro in datosBusquedaIndices.indicesPropietarios|itemsPerPage:5 : 'indicePropietarios' -->
+                               
                             </tbody>
                         </table>
-                        <dir-pagination-controls max-size="8" direction-links="true" boundary-links="true" pagination-id="indicePropietarios" class="ng-isolate-scope"><!-- ngIf: 1 < pages.length || !autoHide --></dir-pagination-controls>
+                        <dir-pagination-controls max-size="8" direction-links="true" boundary-links="true" pagination-id="indicePropietarios" class="ng-isolate-scope"><
+						</dir-pagination-controls>
                     </div>
                 </div>
             </div>
