@@ -9,6 +9,7 @@ Easy to USE
 4. Log in into the VUR
 5. Execute the script
 6. Load an excel file with the FMI numbers in the first column (eg. 128-31). try to use less than 50.
-7. Wait to download. 
+7. Wait to download. If fail delete the downloaded VURs numbers in excel, log out and log in and repeat the process.
 8. After download execute the script printVUR.py setting up the folder where downloaded files to print to pdf.
 9. Execute VURJsonToTable.py setting up the folder in the execution parameters command line and this will convert the json files to excel.
+10. Don't download more than 1000 per day.
