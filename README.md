@@ -3,7 +3,7 @@ Download and Parse Porperty Data From VUR and IGAC Datasources.
 
 Easy to USE
 
-1. Download Crhomium portable
+1. Download Chromium portable
 2. Install on Chromium grease monkey and set up the download folder to download without ask.
 3. Copy and paste VUR.js on grease monkey
 4. Log in into the VUR
